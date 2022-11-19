@@ -10,6 +10,10 @@ const items=[
         color:'anythink'
     },
     {
+        label:'Author',
+        color:'author'
+    },
+    {
         label:'Title', 
         color:'title'
     },

@@ -42,6 +42,28 @@ function List({array,type,val}){
                     }
                 ); 
             }
+            else if(type==="author"){
+                return array.map(
+                    bb=>{
+                        if(bb.volumeInfo.authors){
+                            const arr=bb.volumeInfo.authors;
+                            for(let i=0;i<arr.length;i++){
+                                if(String(arr[i]).toLocaleLowerCase().includes(val.toLocaleLowerCase())){
+                                   ff++; return (
+                                        <Card
+                            key={bb.id}
+                            auth={bb.volumeInfo.authors}
+                            src={bb.volumeInfo.imageLinks?bb.volumeInfo.imageLinks.smallThumbnail:''}
+                            date={bb.volumeInfo.publishedDate}
+                            title={bb.volumeInfo.title}
+                        />
+                                    );
+                                }
+                            }
+                        }
+                    }
+                );
+            }
             else if(type==="date"){
                 return array.map(
                     (bb)=>{
