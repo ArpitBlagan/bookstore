@@ -1,0 +1,26 @@
+.ff{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 20px;
+    size:40px;
+}
+.list{
+    font-family: 'Courier New', Courier, monospace;
+}
+.tt{
+    margin-top:20px;
+}
+.ttt{
+    margin-left:20px;
+    display: inline;
+    position: absolute;
+
+}
+
+.bottom{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
