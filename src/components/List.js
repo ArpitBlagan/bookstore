@@ -1,9 +1,9 @@
 import React, { useState,useEffect } from 'react';
 import Card from './Card';
+//Problem Counter not working for the first render of the result???
 function List({array,type,val}){
     var ff=0;
-    const [count,setCount]=useState(ff);
-    
+    const [count,setCount]=useState(0);
     useEffect(
         () => {
           setCount(ff);
